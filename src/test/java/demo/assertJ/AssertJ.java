@@ -1,5 +1,6 @@
 package demo.assertJ;
 
+import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.data.Offset;
 import org.assertj.core.data.Percentage;
 import org.assertj.jodatime.api.Assertions;
@@ -138,6 +139,14 @@ public class AssertJ {
                     assertThat(val).isNotNull();
                     assertThat(val.length()).isGreaterThan(4);
                 });
+
+        //Soft Assertions
+        SoftAssertions softAssertions=new SoftAssertions();
+        softAssertions.assertThat(s1)
+                .isInstanceOf(Student.class)
+                .extracting(s -> s.getName())
+                .isEqualTo("James");
+        softAssertions.assertAll();
 
     }
     public static void getException(){
