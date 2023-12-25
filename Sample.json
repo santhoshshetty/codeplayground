@@ -1,0 +1,15 @@
+{
+  "countries":{
+    "continent": [
+      {
+        "country": "India",
+        "city": "Hyderabad"
+      },
+      {
+        "country": "Germany",
+        "city": "Berlin"
+      }
+    ],
+    "region": "EuroAsia"
+  }
+}

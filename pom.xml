@@ -17,6 +17,8 @@
         <appium.version>9.0.0</appium.version>
         <testng.version>7.8.0</testng.version>
         <assertJ.version>3.24.2</assertJ.version>
+        <joda.time.version>2.12.5</joda.time.version>
+        <assertJ.joda.verson>2.2.0</assertJ.joda.verson>
     </properties>
 
     <dependencies>
@@ -53,6 +55,18 @@
             <version>${assertJ.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda.time.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.assertj/assertj-joda-time -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-joda-time</artifactId>
+            <version>${assertJ.joda.verson}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
 </project>
