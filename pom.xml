@@ -19,6 +19,7 @@
         <assertJ.version>3.24.2</assertJ.version>
         <joda.time.version>2.12.5</joda.time.version>
         <assertJ.joda.verson>2.2.0</assertJ.joda.verson>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <dependencies>
@@ -67,6 +68,12 @@
             <artifactId>assertj-joda-time</artifactId>
             <version>${assertJ.joda.verson}</version>
             <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
     </dependencies>
 </project>
