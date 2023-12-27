@@ -1,6 +1,5 @@
 package demo.customassert;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ProductTest extends BaseTest{
@@ -9,8 +8,7 @@ public class ProductTest extends BaseTest{
     public void verifyLoginPageSpec(){
         ProductPage productPage=ProductPage.getProductPage();
         productPage.loadProductPage();
-        ProductPageAssert productAssert=new ProductPageAssert(productPage.getValidator());
-        productAssert
+        ProductPageAssert.assertThat(productPage.getValidator())
                 .productNameIs("iPhone")
                 .productCodeIs("product 11")
                 .productAvailabilityIs("In Stock")

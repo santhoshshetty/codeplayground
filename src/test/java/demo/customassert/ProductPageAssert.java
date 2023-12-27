@@ -6,13 +6,13 @@ import org.assertj.core.api.SoftAssertions;
 public class ProductPageAssert extends AbstractAssert<ProductPageAssert, ProductPageValidator> {
 
     SoftAssertions assertions;
-    protected ProductPageAssert(ProductPageValidator productPageAssert) {
-        super(productPageAssert, ProductPageAssert.class);
+    private ProductPageAssert(ProductPageValidator productPageValidator) {
+        super(productPageValidator, ProductPageAssert.class);
         assertions=new SoftAssertions();
     }
 
-    public static ProductPageValidator getValidator(){
-        return null;
+    public static ProductPageAssert assertThat(ProductPageValidator productPageValidator){
+        return new ProductPageAssert(productPageValidator);
     }
 
     public ProductPageAssert productNameIs(String productName){
@@ -38,6 +38,4 @@ public class ProductPageAssert extends AbstractAssert<ProductPageAssert, Product
     public void assertAll(){
         assertions.assertAll();
     }
-
-
 }
