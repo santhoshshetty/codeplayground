@@ -16,7 +16,7 @@
         <restassured.version>5.4.0</restassured.version>
         <appium.version>9.0.0</appium.version>
         <testng.version>7.8.0</testng.version>
-        <assertJ.version>3.24.2</assertJ.version>
+        <assertJ.version>3.25.1</assertJ.version>
         <joda.time.version>2.12.5</joda.time.version>
         <assertJ.joda.verson>2.2.0</assertJ.joda.verson>
         <lombok.version>1.18.30</lombok.version>
