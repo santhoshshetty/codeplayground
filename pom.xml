@@ -12,14 +12,14 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>4.16.1</selenium.version>
+        <selenium.version>4.18.1</selenium.version>
         <restassured.version>5.4.0</restassured.version>
-        <appium.version>9.0.0</appium.version>
-        <testng.version>7.8.0</testng.version>
-        <assertJ.version>3.24.2</assertJ.version>
-        <joda.time.version>2.12.5</joda.time.version>
+        <appium.version>9.2.0</appium.version>
+        <testng.version>7.9.0</testng.version>
+        <assertJ.version>3.25.3</assertJ.version>
+        <joda.time.version>2.12.7</joda.time.version>
         <assertJ.joda.verson>2.2.0</assertJ.joda.verson>
-        <lombok.version>1.18.30</lombok.version>
+        <lombok.version>1.18.32</lombok.version>
     </properties>
 
     <dependencies>
