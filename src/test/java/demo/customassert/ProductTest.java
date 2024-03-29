@@ -1,6 +1,10 @@
 package demo.customassert;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.Objects;
+import java.util.stream.Stream;
 
 public class ProductTest extends BaseTest{
 
